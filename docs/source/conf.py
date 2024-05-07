@@ -10,7 +10,8 @@ release = '1.0.0'
 # -- General configuration
 import os
 import sys
-sys.path.insert(0, os.path.abspath('../../Python_APP/lib'))
+#sys.path.insert(0, os.path.abspath('../../Python_APP/lib'))
+sys.path.insert(0, os.path.abspath('../../lib'))
 
 autodoc_mock_imports=[
 'dso_usb',

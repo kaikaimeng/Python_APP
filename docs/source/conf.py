@@ -10,7 +10,6 @@ release = '1.0.0'
 # -- General configuration
 import os
 import sys
-#sys.path.insert(0, os.path.abspath('../../Python_APP/lib'))
 sys.path.insert(0, os.path.abspath('../../lib'))
 
 autodoc_mock_imports=[
@@ -34,6 +33,7 @@ intersphinx_mapping = {
 intersphinx_disabled_domains = ['std']
 
 templates_path = ['_templates']
+autodoc_preserve_defaults = True
 
 # -- Options for HTML output
 

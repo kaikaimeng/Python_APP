@@ -20,11 +20,11 @@ Typical usage example:
 
 .. code-block::
 
-    import dso2ke as gds
+    import dso2kp as gds
     
     # Create a Dso instance, myDso, and get connected to it.
     myDso = gds.Dso()
-    ret = myDso.connect(host='localhost', port=3000)
+    ret = myDso.connect()
     if ret != 0:
         raise ValueError('Socket connection failed.')
 

@@ -1,13 +1,16 @@
 Welcome to mpo_api's documentation!
 ===================================
-Python standard libraries and micro-libraries
----------------------------------------------
-About stardand standard libraries, you can find here:
+The MPO-2000 supports the execution of Python scripts, which is based on MicroPython V1.19.1. Users can place Python scripts on a USB flash disk and insert it into the USB slot of the MPO-2000, or copy the Python scripts to the internal disk for execution. Here we have compiled the APIs for controlling the main functions of the MPO, as well as the APIs for controlling various external devices.
 
-https://docs.micropython.org/en/latest/library/index.html
+.. Important Considerations for Using MPO's API::
 
-Usage for mpo
---------------
+   * Please ensure your MPO-2000 is version V1.03 or newer before starting Python programming.
+   * Please refer to the following link for the MicroPython standard library V1.19.1 <https://docs.micropython.org/en/v1.19.1/library/index.html>
+   * Most MicroPython standard library modules implement a subset of the functionality of their equivalent Python 3 modules.
+   * When calling multiple API functions consecutively, it is important to include some delay to ensure that the previous control commands have been fully executed. Additionally, at lower speed timebase, the oscilloscope sampling may take more time. Avoid querying the oscilloscope for automatic measurement data before the sampling is complete, as this may result in incorrect data.
+
+Usage for mpo_api
+-----------------
 .. code-block:: python
 
     try:
